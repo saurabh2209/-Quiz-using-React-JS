@@ -1,0 +1,132 @@
+button{
+  color:red;
+  }  
+
+p{
+  
+font-size: 40px;  
+
+}
+
+
+
+h2{
+ float:right;
+ padding:50px;
+ font-size:30px;
+}
+.rules p{
+  
+  font-size: 10px;
+  
+  
+}
+
+.container{
+  margin-top:20px;
+  border: 1px solid black;
+  padding:25px;
+}  
+
+.container p{
+    
+text-align: center;    
+}
+
+.container div{
+margin:5px;    
+padding:5px;
+font-size:25px;  
+text-align: center
+}
+
+.controls{
+    float:left;
+}
+
+.controls button{
+    width:100px;
+    height:30px;
+    font-size:15px;
+}
+
+ol {
+  color:red;
+  font-size:20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+button{
+  margin:2px;
+  color:white;
+  background-color:black;
+}  
+
+input[type="radio"] {
+  margin-right: 5px;
+  
+}
+
+span{
+    
+font-size: 20px    
+}
+
+
+
+input[type="button"]{
+
+text-align:center;  
+margin:10px;
+
+}
+
+.jumbo{
+
+ position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size:30px;
+  margin-top: -50px;
+  margin-left: -50px;
+  
+  
+
+    
+}
+
+
+
+
+
+input[type=button]:hover{
+background: #21c064;
+color:white;
+}
+
+input[type=button] {
+
+    background-color: #F8F8F8;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+  color: black;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+
+}
+
+.status{
+    float:right;
+    margin-right: 55px;
+    margin-top:20px;
+}
