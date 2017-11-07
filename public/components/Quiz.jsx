@@ -1,10 +1,9 @@
 
-const quiz=require('../questions/questions.js').questions.quiz
+import {questions} from '../questions/questions.js'     
 import React,{Component} from 'react'
 import Choice from 'Choice'
 import Score from 'Score'
-
-
+const quiz=questions.quiz
 
  class Quiz extends Component{
      
@@ -16,9 +15,7 @@ import Score from 'Score'
             current_quiz: quiz[ 0 ],
              score: [],
              choice:[]
-           
-           
-       }
+            }
          
 }
      
@@ -31,13 +28,11 @@ import Score from 'Score'
             
         })
         
-         
-         this.state.choice[this.state.current]=option
+          this.state.choice[this.state.current]=option
         // console.log(this.state.choice)
        
-        
-       this.setState( {
-                        score:  [...this.state.score, {q:this.state.current_quiz.question,score: x[0].points}],
+        this.setState( {
+                        score:  [...this.state.score, {q:this.state.current_quiz.subquestion,score: x[0].points}],
                         
                          current_quiz: quiz[ this.state.current + 1 ],
                         current: this.state.current + 1,
@@ -75,15 +70,12 @@ import Score from 'Score'
         
      }
      
-     
-    
-    
-   render(){
+     render(){
        
         let {current, answer, choice}=this.state
         
        
-            var switchquestions=function(){
+            const switchquestions=function(){
             
             if(this.state.current==0)
              //Makes only the next button visible on a first page 
@@ -133,7 +125,8 @@ import Score from 'Score'
                 <div>
             <div className="container" >
                 
-                <p>{this.state.current_quiz.question}</p>
+                 <h3><b>{this.state.current_quiz.question}</b></h3>
+                <p>{this.state.current_quiz.subquestion}</p>
           
                 <div align="center">
                 {choices}

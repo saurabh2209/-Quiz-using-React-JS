@@ -4,18 +4,12 @@ import {Link} from 'react-router'
 
 const Main =function(props){
     
-    
- return (
+    return (
             <div className="jumbo">
-               
-            
-          <Link to ="/assessment">Start Quiz</Link> 
-            
-             
-              {props.children} 
+             <Link to ="/assessment">Start Quiz</Link> 
+            {props.children} 
             </div>
         );    
     
 }
-
 export default Main

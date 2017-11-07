@@ -1,11 +1,11 @@
-var express=require("express")
+var express=require('express')
 var app=express()
 app.use(express.static(__dirname+"/public"))
 
 
 // express listens to request and starts server
-app.listen(process.env.PORT,process.env.IP,function(){
+app.listen(3000,function(){
     
- console.log("server started")   
+ console.log("server started on port 3000")   
 }
 )
